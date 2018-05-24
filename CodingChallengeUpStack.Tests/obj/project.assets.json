@@ -5700,11 +5700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\maximdumont\\source\\repos\\CodingChallengeUpStack\\CodingChallengeUpStack.Tests\\CodingChallengeUpStack.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\maximdumont\\Documents\\GitHub\\upstack-coding-challenge\\CodingChallengeUpStack.Tests\\CodingChallengeUpStack.Tests.csproj",
       "projectName": "CodingChallengeUpStack.Tests",
-      "projectPath": "c:\\users\\maximdumont\\source\\repos\\CodingChallengeUpStack\\CodingChallengeUpStack.Tests\\CodingChallengeUpStack.Tests.csproj",
+      "projectPath": "C:\\Users\\maximdumont\\Documents\\GitHub\\upstack-coding-challenge\\CodingChallengeUpStack.Tests\\CodingChallengeUpStack.Tests.csproj",
       "packagesPath": "C:\\Users\\maximdumont\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\maximdumont\\source\\repos\\CodingChallengeUpStack\\CodingChallengeUpStack.Tests\\obj\\",
+      "outputPath": "C:\\Users\\maximdumont\\Documents\\GitHub\\upstack-coding-challenge\\CodingChallengeUpStack.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
