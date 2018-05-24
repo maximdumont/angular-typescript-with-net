@@ -14,18 +14,26 @@ namespace CodingChallengeUpStack.Attributes
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             var person = (Person) validationContext.ObjectInstance;
-            if (string.IsNullOrEmpty(person.FirstName) || string.IsNullOrEmpty(person.LastName) ||
-                string.IsNullOrEmpty(person.Phone))
+            if (ContainsEmptyProperty(person))
             {
                 return new ValidationResult("Error, Can Not Have Empty Field");
             }
 
-            if (!Regex.Match(person.Phone, @"^([0-9]{3}-[0-9]{3}-[0-9]{4})$").Success)
+            if (!IsValidPhoneNumber(person.Phone))
             {
-                return new ValidationResult("Erorr, Invalid Phone Number Format");
+                return new ValidationResult("Error, Invalid Phone Number");
             }
-
             return ValidationResult.Success;
+        }
+
+        public bool ContainsEmptyProperty(Person person)
+        {
+            return string.IsNullOrEmpty(person.FirstName) || string.IsNullOrEmpty(person.LastName) ||
+                   string.IsNullOrEmpty(person.Phone);
+        }
+        public bool IsValidPhoneNumber(string number)
+        {
+            return Regex.Match(number, @"^([0-9]{3}-[0-9]{3}-[0-9]{4})$").Success;
         }
     }
 }

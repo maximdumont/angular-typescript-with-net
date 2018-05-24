@@ -1,0 +1,17 @@
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.deps.json
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.runtimeconfig.json
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.runtimeconfig.dev.json
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.pdb
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.csprojResolveAssemblyReference.cache
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.csproj.CoreCompileInputs.cache
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.AssemblyInfoInputs.cache
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.AssemblyInfo.cs
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.pdb
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.dll
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\bin\Debug\netcoreapp2.0\CodingChallengeUpStack.pdb
+C:\Users\maximdumont\Documents\GitHub\upstack-coding-challenge\CodingChallengeUpStack.Tests\obj\Debug\netcoreapp2.0\CodingChallengeUpStack.Tests.csproj.CopyComplete
