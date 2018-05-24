@@ -51,6 +51,9 @@ export class PeopleComponent implements OnInit {
                 console.log(err);
                 this.addPersonSubmissionResult = "There was an error saving this person";
             });
+        this.addUserForm.value.firstName.clear();
+        this.addUserForm.value.lastName.clear();
+        this.addUserForm.value.phone.clear();
         this.addPersonFormVisible = false;
     }
 
