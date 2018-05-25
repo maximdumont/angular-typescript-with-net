@@ -68,6 +68,10 @@ export class PeopleComponent implements OnInit {
                     (error) => this.addPersonSubmissionResult = "There was an error removing this person");
         }
     }
+
+    detailsPerson(person: People): void {
+
+    }
 }
 
 interface People {
