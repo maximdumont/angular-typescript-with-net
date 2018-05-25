@@ -12,19 +12,22 @@ export class PeopleComponent implements OnInit {
         this.getPeopleData();
     }
 
-    addPersonSubmissionResult: string;
+    statusSubmissionResult: string;
     addPersonFormVisible = false;
+    showUpdateFormVisible = false;
     people: People[];
+    updateUserForm: FormGroup;
     addUserForm: FormGroup;
     private baseUrl: string;
+    formContent = {
+        firstName: ["", Validators.required],
+        lastName: ["", Validators.required],
+        phone: ["", Validators.required]
+    };
 
     constructor(private http: Http, @Inject("BASE_URL") baseUrl: string, private formBuilder: FormBuilder) {
         this.baseUrl = baseUrl;
-        this.addUserForm = this.formBuilder.group({
-            firstName: ["", Validators.required],
-            lastName: ["", Validators.required],
-            phone: ["", Validators.required]
-        });
+        this.addUserForm = this.formBuilder.group(this.formContent);
     }
 
     getPeopleData(): void {
@@ -45,11 +48,11 @@ export class PeopleComponent implements OnInit {
                 phone: this.addUserForm.value.phone
             }).
             subscribe((data: any) => {
-                this.addPersonSubmissionResult = data.statusText;
+                this.statusSubmissionResult = data.statusText;
                 this.getPeopleData();
             }, (err: any) => {
                 console.log(err);
-                this.addPersonSubmissionResult = "There was an error saving this person";
+                this.statusSubmissionResult = "There was an error saving this person";
             });
         this.addUserForm.value.firstName.clear();
         this.addUserForm.value.lastName.clear();
@@ -62,15 +65,40 @@ export class PeopleComponent implements OnInit {
             this.http.delete(this.baseUrl + "api/People/" + person.personId)
                 .subscribe(
                     (data: any) => {
-                        this.addPersonSubmissionResult = "User Deleted";
+                        this.statusSubmissionResult = "User Deleted";
                         this.getPeopleData();
                     },
-                    (error) => this.addPersonSubmissionResult = "There was an error removing this person");
+                    (error) => this.statusSubmissionResult = "There was an error removing this person");
         }
     }
 
-    detailsPerson(person: People): void {
+    person: People;
+    detailPerson(person: People): void {
+        this.person = person;
+        this.showUpdateFormVisible = true;
+        this.updateUserForm = this.formBuilder.group({
+            firstName: [person.firstName, Validators.required],
+            lastName: [person.lastName, Validators.required],
+            phone: [person.phone, Validators.required]
+        });
+    }
 
+    updatePerson(): void {
+        var people: People = {
+            firstName: this.updateUserForm.value.firstName,
+            lastName: this.updateUserForm.value.lastName,
+            phone: this.updateUserForm.value.phone,
+            personId: this.person.personId
+        }
+        this.http.put(this.baseUrl + "api/People/" + people.personId, people).subscribe(
+                (data: any) => {
+                    this.statusSubmissionResult = "User Updated";
+                    this.getPeopleData();
+                },
+                (error) => { this.statusSubmissionResult = "User Update Failed"}
+        );
+
+        this.showUpdateFormVisible = false;
     }
 }
 

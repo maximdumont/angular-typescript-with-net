@@ -1,5 +1,5 @@
 <div>
-    <b>Status</b> {{addPersonSubmissionResult}}
+    <b>Status</b> {{statusSubmissionResult}}
 </div>
 <table>
     <tr>
@@ -12,7 +12,7 @@
         <td>{{item.lastName}}</td>
         <td>{{item.phone}}</td>
         <td>
-            <a (click)="detailPerson(item)">Details</a>
+            <a (click)="detailPerson(item)">Update</a>
             <a (click)="removePerson(item)">Remove</a>
         </td>
     </tr>
@@ -35,5 +35,22 @@
         <br/>
 
         <button type="submit" [disabled]="!addUserForm.valid">Submit</button>
+    </form>
+</div>
+<div id="updatePersonForm" *ngIf="showUpdateFormVisible">
+    <form [formGroup]="updateUserForm" (submit)="updatePerson()">
+        <label for="updateFirstName">First Name</label>
+        <input formControlName="firstName" id="updateFirstName"/>
+        <br/>
+        
+        <label for="updateLastName">Last Name</label>
+        <input formControlName="lastName" id="updateLastName"/>
+        <br/>
+        
+        <label for="updatePhone">Phone Number</label>
+        <input formControlName="phone" id="updatePhone"/>
+        <br/>
+
+        <button type="submit">Submit</button>
     </form>
 </div>
